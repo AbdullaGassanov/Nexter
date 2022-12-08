@@ -1,0 +1,10 @@
+.aside {
+  background-color: $color-primary-dark;
+  color: $color-grey-light-1;
+  padding: 1rem;
+  text-align: center;
+
+  &__btn {
+    font-size: 6rem;
+  }
+}

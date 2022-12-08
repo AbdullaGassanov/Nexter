@@ -22,4 +22,163 @@ body {
   color: #6d5d4b;
   line-height: 1.7;
   margin: 0 auto;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 5% 60% 35%;
+  grid-template-rows: 100%;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  justify-items: center;
+  height: 80vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(4, 17, 44, 0.85)), to(rgba(14, 17, 58, 0.85))), url("../Img/hero.jpeg");
+  background-image: -webkit-linear-gradient(top, rgba(4, 17, 44, 0.85), rgba(14, 17, 58, 0.85)), url("../Img/hero.jpeg");
+  background-image: -o-linear-gradient(top, rgba(4, 17, 44, 0.85), rgba(14, 17, 58, 0.85)), url("../Img/hero.jpeg");
+  background-image: linear-gradient(to bottom, rgba(4, 17, 44, 0.85), rgba(14, 17, 58, 0.85)), url("../Img/hero.jpeg");
+}
+.header__logo {
+  width: 15rem;
+  height: 20rem;
+}
+.header__logo > img {
+  width: 100%;
+}
+.header__heading3 {
+  text-transform: uppercase;
+  color: #c69963;
+  padding-bottom: 1rem;
+  font-size: 1.8rem;
+}
+.header__heading2 {
+  color: #f9f7f6;
+  font-size: 4.5rem;
+  padding-bottom: 2rem;
+  font-weight: 400;
+}
+.header__footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  width: 70%;
+}
+.header__footer-line {
+  color: #f9f7f6;
+  font-size: 1.2rem;
+  text-align: center;
+  padding-bottom: 2rem;
+  position: relative;
+}
+.header__footer-line::before {
+  content: "";
+  position: absolute;
+  top: 25%;
+  left: 0;
+  width: 45%;
+  height: 2px;
+  background-color: #f9f7f6;
+}
+.header__footer-line::after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  right: 0;
+  width: 45%;
+  height: 2px;
+  background-color: #f9f7f6;
+}
+.header__footer-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+          justify-content: space-around;
+}
+.header__footer-img {
+  width: 8rem;
+  height: 1.9rem;
+}
+
+.aside {
+  background-color: #b28451;
+  color: #f9f7f6;
+  padding: 1rem;
+  text-align: center;
+}
+.aside__btn {
+  font-size: 6rem;
+}
+
+.realtors {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  height: 80vh;
+  background-color: #101d2c;
+}
+.realtors__title {
+  color: #b28451;
+  padding-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 300;
+}
+.realtors__item {
+  padding-bottom: 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+.realtors__item-img {
+  width: 7rem;
+  border-radius: 50%;
+}
+.realtors__item-name {
+  color: #f9f7f6;
+  font-size: 2rem;
+}
+.realtors__item-sold {
+  color: #f9f7f6;
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-top: -0.2rem;
+}
+
+.btn {
+  padding: 2rem 4rem;
+  color: #f9f7f6;
+  background-color: #c69963;
+  font-size: 2rem;
+  text-decoration: none;
+  border-radius: 5px;
 }/*# sourceMappingURL=main.css.map */
