@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;0,800;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap");
+
+%heading {
+  font-family: $font-display;
+  font-weight: 400;
+}
+
+@mixin lighdark {
+  &--light {
+    color: $color-grey-light-1;
+  }
+
+  &--dark {
+    color: $color-grey-dark-1;
+  }
+}
+
+.heading-1 {
+  @extend %heading;
+  @include lighdark;
+}
+
+.heading-2 {
+  @extend %heading;
+  @include lighdark;
+  font-size: 4rem;
+  font-style: italic;
+}
+
+.heading-3 {
+  @extend %heading;
+
+  @include lighdark;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  color: $color-primary;
+}
+
+.heading-4 {
+  @extend %heading;
+  font-size: 1.8rem;
+  @include lighdark;
+}
+
+.btn {
+  background-color: $color-primary;
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  font-family: $font-display;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 1.8rem 3rem;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    background-color: $color-primary-dark;
+  }
+}
+
+.mb-sm {
+  margin-bottom: 2rem;
+}
+
+.mb-md {
+  margin-bottom: 3rem;
+}
+
+.mb-lg {
+  margin-bottom: 4rem;
+}
+
+.mb-hg {
+  margin-bottom: 8rem;
+}
