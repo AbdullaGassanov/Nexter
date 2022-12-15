@@ -35,20 +35,25 @@ body {
   }
 }
 
-/* @media screen and (max-width: 1200px) {
-  html {
-    font-size: 50%;
+/* @media screen and (max-width: 1000px) {
+  .container {
+    grid-template-columns: minmax(max-content, 1fr);
+    grid-template-rows: minmax(max-content, 1fr);
+
+    & > * {
+      padding: 1rem 2rem;
+      font-size: 1rem;
+    }
+  }
+
+  .sidebar {
+    text-align: right;
+
+    display: inline-block;
+    grid-column: 1 / -1;
+  }
+  .story__img--2 {
+    display: none;
   }
 }
-
-@media screen and (max-width: 800px) {
-  html {
-    font-size: 40%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  html {
-    font-size: 25%;
-  }
-} */
+ */

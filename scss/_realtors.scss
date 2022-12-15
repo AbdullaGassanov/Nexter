@@ -1,4 +1,48 @@
 .realtors {
   background-color: $color-secondary;
   grid-column: col-start 7 / full-end;
+
+  color: #fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  > h2 {
+    color: $color-primary-dark;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-style: normal;
+  }
+
+  &-list {
+    padding: 2rem 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.realtor {
+  display: flex;
+  align-items: center;
+  margin: 2rem;
+  &-img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+  }
+  &-info {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.7rem;
+    font-weight: 500;
+  }
+
+  &-sold {
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
 }

@@ -1,5 +1,86 @@
 .header {
-  background-color: $color-grey-dark-2;
+  background-image: linear-gradient(
+      rgba($color-secondary, 0.9),
+      rgba($color-secondary, 0.9)
+    ),
+    url("../Img/hero.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
   color: $color-grey-light-1;
   grid-column: full-start / col-end 6;
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    padding: 3rem 5rem;
+  }
+
+  &__logo {
+    width: 15rem;
+    height: 3rem;
+    align-self: center;
+  }
+
+  &__heading {
+    font-size: 5rem;
+  }
+  &__btn {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      width: max-content;
+      margin: 1rem 0;
+      display: block;
+      text-align: center;
+    }
+  }
+
+  &__footer {
+    width: 100%;
+
+    &-line {
+      text-align: center;
+      font-size: 1.4rem;
+      display: block;
+      position: relative;
+      margin-bottom: 3rem;
+      &::before,
+      &::after {
+        content: "";
+        background-color: #fff;
+        width: 45%;
+        height: 1px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      &::before {
+        left: 0;
+      }
+
+      &::after {
+        right: 0;
+      }
+    }
+  }
+
+  &__brands {
+    display: flex;
+    justify-content: center;
+
+    & > * {
+      width: 10rem;
+      height: 3rem;
+      opacity: 0.6;
+
+      &:not(:last-child) {
+        margin-right: 10rem;
+      }
+    }
+  }
 }
