@@ -1,48 +1,71 @@
 .realtors {
-  background-color: $color-secondary;
-  grid-column: col-start 7 / full-end;
+	background-color: $color-secondary;
+	grid-column: col-start 7 / full-end;
 
-  color: #fff;
+	color: #fff;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 
-  > h2 {
-    color: $color-primary-dark;
-    text-transform: uppercase;
-    font-size: 2rem;
-    font-style: normal;
-  }
+	@media only screen and(max-width: $bp-medium) {
+		grid-column: full-start / -1;
+		grid-row: 3/4;
+	}
 
-  &-list {
-    padding: 2rem 5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+	> h2 {
+		color: $color-primary-dark;
+		text-transform: uppercase;
+		font-size: 2rem;
+		font-style: normal;
+	}
+
+	&-list {
+		padding: 2rem 1rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+		@media only screen and(max-width: $bp-medium) {
+			flex-direction: row;
+		}
+	}
 }
 
 .realtor {
-  display: flex;
-  align-items: center;
-  margin: 2rem;
-  &-img {
-    width: 7rem;
-    height: 7rem;
-    border-radius: 50%;
-    margin-right: 2rem;
-  }
-  &-info {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.7rem;
-    font-weight: 500;
-  }
+	display: flex;
+	align-items: center;
+	margin: 2rem 0.2rem;
+	&-img {
+		width: 7rem;
+		height: 7rem;
+		border-radius: 50%;
+		margin-right: 2rem;
+		@media only screen and(max-width: $bp-medium) {
+			margin-right: 0.5rem;
+		}
+	}
+	&-info {
+		display: flex;
+		flex-direction: column;
+		font-size: 1.7rem;
+		font-weight: 500;
+		@media only screen and(max-width: $bp-medium) {
+			flex-direction: row;
+			font-size: 1.4rem;
+			display: block;
+			margin-right: 2rem;
+		}
+	}
 
-  &-sold {
-    font-size: 1.1rem;
-    font-weight: 400;
-  }
+	&-sold {
+		font-size: 1.1rem;
+		font-weight: 400;
+		filter: brightness(60%);
+		@media only screen and(max-width: $bp-medium) {
+			font-size: 0.8rem;
+			display: block;
+		}
+	}
 }
